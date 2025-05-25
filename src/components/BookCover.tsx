@@ -11,7 +11,7 @@ const BookCover: React.FC = () => {
       }}
     >
       <img 
-        src="/curled-crystal-cover.png" 
+        src="https://raw.githubusercontent.com/stackblitz/stackblitz-codeflow/main/examples/curled-crystal-cover.png" 
         alt="Curled Crystal Book Cover" 
         className="w-full h-full object-contain drop-shadow-2xl"
       />
