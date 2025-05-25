@@ -40,7 +40,7 @@ const About: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden shadow-medium">
+              <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden shadow-medium -mt-8">
                 <img 
                   src="/author-image.jpg"
                   alt="Shanmukhee Nimma" 

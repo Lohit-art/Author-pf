@@ -47,7 +47,11 @@ const Home: React.FC = () => {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="flex justify-center lg:justify-end"
             >
-              <BookCover />
+              <img
+                src="/curled-crystal-cover.jpg"
+                alt="Curled Crystal Book Cover"
+                className="max-w-xs shadow-2xl rounded-lg"
+              />
             </motion.div>
           </div>
           
