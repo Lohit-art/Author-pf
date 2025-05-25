@@ -32,7 +32,7 @@ const Header: React.FC = () => {
         <nav className="flex items-center justify-between">
           {/* Logo/Author Name */}
           <Link to="/" className="font-serif text-2xl font-medium hover:text-primary-600 transition-colors">
-            S.Nimma
+            <img src="/snimma-logo.png" alt="S.Nimma Logo" className="h-10 w-auto inline-block align-middle" />
           </Link>
           
           {/* Desktop Navigation */}
