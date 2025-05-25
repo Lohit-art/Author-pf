@@ -50,7 +50,8 @@ const Home: React.FC = () => {
               <img
                 src="/curled-crystal-cover.jpg"
                 alt="Curled Crystal Book Cover"
-                className="max-w-xs shadow-2xl rounded-lg"
+                className="max-w-xs shadow-2xl drop-shadow-2xl rounded-lg"
+                style={{ boxShadow: '0 12px 40px 0 rgba(55, 30, 30, 0.35), 0 2px 8px 0 rgba(0,0,0,0.10)' }}
               />
             </motion.div>
           </div>

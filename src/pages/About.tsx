@@ -22,8 +22,8 @@ const About: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-semibold mb-6 text-neutral-900">
-              About <span className="text-primary-600">Shanmukhee Nimma</span>
+            <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ color: '#B76E79' }}>
+              About <span style={{ color: '#E9AFA3' }}>Shanmukhee Nimma</span>
             </h1>
           </motion.div>
         </div>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
               transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden shadow-medium -mt-8">
+              <div className="aspect-[3/4] bg-neutral-200 rounded-lg overflow-hidden shadow-medium -mt-24">
                 <img 
                   src="/author-image.jpg"
                   alt="Shanmukhee Nimma" 
@@ -57,7 +57,7 @@ const About: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <div className="prose text-neutral-700">
+              <div className="prose" style={{ color: '#355C4A' }}>
                 <p>
                   I am based in Melbourne working as a Business Analyst with a Master of Information Systems from Australia. I was brought up in India and I spent most of my life skeptical of psychology— considering it no more than a societal illusion.
                 </p>
