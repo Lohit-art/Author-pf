@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium leading-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-block px-5 py-3 rounded-md transition-all duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-600 text-primary-600 hover:bg-primary-50;
+  }
+
+  .nav-link {
+    @apply relative text-neutral-800 hover:text-primary-600 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-600 after:transition-all hover:after:w-full;
+  }
+
+  .nav-link.active {
+    @apply text-primary-600 after:w-full;
+  }
+
+  .prose {
+    @apply max-w-prose mx-auto;
+  }
+
+  .prose h2 {
+    @apply text-2xl sm:text-3xl mt-8 mb-4;
+  }
+
+  .prose p {
+    @apply mb-6;
+  }
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-up {
+    @apply animate-slide-up;
+  }
+}
