@@ -24,8 +24,8 @@ const Header: React.FC = () => {
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-soft py-3' 
-          : 'bg-transparent py-5'
+          ? 'bg-white/95 backdrop-blur-sm shadow-soft py-1' 
+          : 'bg-transparent py-3'
       }`}
     >
       <div className="container-custom">
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             <img 
               src="/logo.png" 
               alt="S.Nimma" 
-              className="h-16 sm:h-24 md:h-32 lg:h-40 xl:h-52 w-auto"
+              className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-auto"
             />
           </Link>
           
@@ -52,6 +52,18 @@ const Header: React.FC = () => {
               className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
             >
               About
+            </Link>
+            <Link 
+              to="/book" 
+              className={`nav-link ${location.pathname === '/book' ? 'active' : ''}`}
+            >
+              Book
+            </Link>
+            <Link 
+              to="/extract" 
+              className={`nav-link ${location.pathname === '/extract' ? 'active' : ''}`}
+            >
+              Extract
             </Link>
           </div>
           

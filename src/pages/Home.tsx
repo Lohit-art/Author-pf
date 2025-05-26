@@ -146,14 +146,13 @@ const Home: React.FC = () => {
             transition={{ delay: 0.7, duration: 0.7 }}
             className="mt-16 text-center"
           >
-            <a 
-              href="#" 
+            <Link 
+              to="/extract"
               className="btn btn-primary inline-flex items-center"
-              onClick={(e) => e.preventDefault()}
             >
               <BookOpen size={18} className="mr-2" />
               Read an Extract
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>

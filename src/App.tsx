@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
 import About from './pages/About';
+import Book from './pages/Book';
+import Extract from './pages/Extract';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/book" element={<Book />} />
+              <Route path="/extract" element={<Extract />} />
             </Routes>
           </AnimatePresence>
         </main>

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               <span>Contact</span>
             </a>
             <Link 
-              to="/" 
+              to="/book" 
               className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors"
               aria-label="Book"
             >
