@@ -196,21 +196,11 @@ const Home: React.FC = () => {
             <p className="text-lg text-neutral-700 mb-8">
               Mental health affects us all. Stay connected for upcoming events, discussions, and resources that continue the important conversation started in Curled Crystal.
             </p>
-            <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-grow px-4 py-3 rounded-md border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                required
-              />
-              <button 
-                type="submit" 
-                className="btn btn-primary whitespace-nowrap"
-                onClick={(e) => e.preventDefault()}
-              >
-                Stay Updated
-              </button>
-            </form>
+            <div className="max-w-md mx-auto flex flex-col items-center gap-3">
+              <p className="text-lg text-primary-600 font-semibold mt-4">
+                Community features are coming soon! Soon, you'll be able to join discussions, sign up for updates, and connect with others passionate about mental health and healing. Stay tuned!
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
