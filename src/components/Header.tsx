@@ -31,8 +31,12 @@ const Header: React.FC = () => {
       <div className="container-custom">
         <nav className="flex items-center justify-between">
           {/* Logo/Author Name */}
-          <Link to="/" className="font-serif text-2xl font-medium hover:text-primary-600 transition-colors">
-            <img src="/snimma-logo.png" alt="S.Nimma Logo" className="h-10 w-auto inline-block align-middle" />
+          <Link to="/" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="/logo.png" 
+              alt="S.Nimma" 
+              className="h-52 w-auto"
+            />
           </Link>
           
           {/* Desktop Navigation */}
