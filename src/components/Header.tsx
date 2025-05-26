@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             <img 
               src="/logo.png" 
               alt="S.Nimma" 
-              className="h-52 w-auto"
+              className="h-16 sm:h-24 md:h-32 lg:h-40 xl:h-52 w-auto"
             />
           </Link>
           
