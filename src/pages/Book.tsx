@@ -33,7 +33,7 @@ const ebookStores = [
     url: 'https://www.smashwords.com/books/view/1766986',
   },
   {
-    name: 'vivlio',
+    name: 'Vivlio',
     icon: '/icons/vivlio.png',
     url: 'https://shop.vivlio.com/product/9798231494248_9798231494248_10020/curled-crystal',
   },
@@ -105,10 +105,9 @@ const Book: React.FC = () => (
               target="_blank"
               rel="noopener noreferrer"
               className="w-28 h-28 p-0 rounded-lg shadow-lg flex items-center justify-center"
-              title={store.name}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.2, duration: 0.7 }}
+              transition={{ duration: 0.25 }}
               whileHover={{ scale: 1.13, rotateX: 10, rotateY: -10, boxShadow: '0 12px 32px 0 rgba(55,30,30,0.25)' }}
               whileTap={{ scale: 0.97, rotateX: 0, rotateY: 0 }}
             >

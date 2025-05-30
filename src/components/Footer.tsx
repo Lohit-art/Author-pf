@@ -7,7 +7,8 @@ const Footer: React.FC = () => {
   const [copied, setCopied] = useState(false);
   const email = 'shanmukhee@snimmaauthorhub.net';
 
-  const handleCopy = () => {
+  const handleCopy = (e: React.MouseEvent) => {
+    e.preventDefault();
     navigator.clipboard.writeText(email);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
@@ -28,22 +29,18 @@ const Footer: React.FC = () => {
           
           <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6">
             <div className="relative group">
-              <a 
+              <a
                 href={`mailto:${email}`}
-                className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors"
+                onClick={handleCopy}
+                className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors cursor-pointer"
                 aria-label="Email"
               >
                 <Mail size={18} className="mr-2" />
                 <span>Contact</span>
+                <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-3 py-1 rounded bg-neutral-900 text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity select-all z-20 shadow-lg pointer-events-none">
+                  {copied ? 'Copied!' : email}
+                </span>
               </a>
-              <button
-                type="button"
-                onClick={handleCopy}
-                className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-3 py-1 rounded bg-neutral-900 text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity select-all z-20 shadow-lg focus:outline-none active:bg-neutral-800"
-                style={{ cursor: 'pointer' }}
-              >
-                {copied ? 'Copied!' : email}
-              </button>
             </div>
             <Link 
               to="/book" 
