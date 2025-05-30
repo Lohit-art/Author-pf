@@ -68,9 +68,9 @@ const Book: React.FC = () => (
     <div className="container-custom pt-52 pb-16 flex flex-col md:flex-row items-center md:items-start justify-center gap-12 mx-auto relative z-10">
       {/* Book Cover on the left */}
       <motion.img
-        src="/Remove background project.png"
+        src="/ad_cover.png"
         alt="Curled Crystal Book Cover"
-        className="w-56 h-auto rounded-lg shadow-lg mb-8 md:mb-0"
+        className="w-96 h-auto rounded-lg shadow-lg mb-8 md:mb-0 md:mr-8"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
@@ -78,7 +78,7 @@ const Book: React.FC = () => (
 
       {/* Icons on the right */}
       <motion.div
-        className="flex flex-col items-center w-full md:w-auto"
+        className="flex flex-col items-start w-full md:w-auto"
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.6, duration: 1 }}
@@ -93,7 +93,7 @@ const Book: React.FC = () => (
           Available in E-book:
         </motion.h1>
         <motion.div
-          className="flex flex-row flex-wrap gap-6 justify-center md:justify-start"
+          className="flex flex-row flex-wrap gap-6 justify-start"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
