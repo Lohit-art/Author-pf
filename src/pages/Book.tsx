@@ -9,7 +9,7 @@ const ebookStores = [
   },
   {
     name: 'Barnes & Noble',
-    icon: '/icons/barnes-and-noble-removebg-preview',
+    icon: '/icons/barnes-and-noble-removebg-preview.png',
     url: 'https://www.barnesandnoble.com/w/curled-crystal-s-nimma/1147406379;jsessionid=AA1983BB6AF3D47C28F6F43C4ED27597.prodny_store02-atgap01?ean=2940181661851&st=AFF&2sid=Draft2Digital_7968444_NA&sourceId=AFFDraft2Digital',
   },
   {
