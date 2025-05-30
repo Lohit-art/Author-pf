@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Heart, Mail, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const [copied, setCopied] = useState(false);
+  const email = 'shanmukhee@snimmaauthorhub.net';
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
   
   return (
     <footer className="bg-neutral-100 py-8 border-t border-neutral-200">
@@ -19,14 +27,24 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6">
-            <a 
-              href="mailto:contact@snimma.com" 
-              className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors"
-              aria-label="Email"
-            >
-              <Mail size={18} className="mr-2" />
-              <span>Contact</span>
-            </a>
+            <div className="relative group">
+              <a 
+                href={`mailto:${email}`}
+                className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={18} className="mr-2" />
+                <span>Contact</span>
+              </a>
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-3 py-1 rounded bg-neutral-900 text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity select-all z-20 shadow-lg focus:outline-none active:bg-neutral-800"
+                style={{ cursor: 'pointer' }}
+              >
+                {copied ? 'Copied!' : email}
+              </button>
+            </div>
             <Link 
               to="/book" 
               className="flex items-center text-neutral-700 hover:text-primary-600 transition-colors"
