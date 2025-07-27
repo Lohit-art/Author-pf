@@ -59,22 +59,16 @@ const About: React.FC = () => {
             >
               <div className="prose" style={{ color: '#355C4A' }}>
                 <p>
-                  I am based in Melbourne working as a Business Analyst with a Master of Information Systems from Australia. I was brought up in India and I spent most of my life skeptical of psychology— considering it no more than a societal illusion.
+                  I'm S. Nimma, based in Melbourne, working as a Business Analyst with a Master's in Information Systems from Australia. Raised in India, I was drawn to community service early in life—but wasn't allowed to get involved due to safety concerns, taboos, and societal fears around women engaging in emotional or vulnerable work.
                 </p>
                 <p>
-                  However, Life has a way of reshaping our beliefs, and my personal battle with depression led me to therapy out of sheer curiosity. To my surprise, therapy was transformative and sparked my genuine interest in mental health. This experience motivated me to embark on a new academic journey, pursuing a Master's in Psychology to deepen my understanding and help others.
+                  After moving to Australia, that interest finally found space to grow. I began volunteering with Vinnies, a faith-based organisation in the Catholic tradition, where I was introduced to the emotional undercurrents of people's lives—poverty, loneliness, mental struggle. It challenged everything I once believed. I had previously dismissed psychology as a money-making illusion, but these encounters showed me that beneath every behavior was an unmet need, a hidden wound.
                 </p>
                 <p>
-                  During this time, I had the unique opportunity to form deep connection with two remarkable women— one living with Bipolar the other with Borderline Personality Disorder and Bipolar. Their real-life stories, struggles and resilience opened a new dimension of understanding for me.
+                  Driven by this insight, I pursued a Master's in Psychology. While studying, I also served as an active listener for survivors of sexual assault and people facing mental health crises. It was during this time that I formed deep, life-altering bonds with two women—one living with bipolar disorder, the other with both borderline personality disorder and bipolar. Their resilience and contradictions became the emotional core of Curled Crystal.
                 </p>
                 <p>
-                  Curled Crystal was born from these true encounters. It reflects the complexity of psychological disorders, offering an in-depth exploration of coping mechanisms, understanding triggers, navigating manipulation, healing trauma and fostering empathy on self and others— all through immersive storytelling, direct dialogues to understand manipulation and introspective monologues.
-                </p>
-                <p>
-                  I believe that true healing begins with awareness.
-                </p>
-                <p>
-                  Curled Crystal is not a story— it is a journey of transformation, courage and emotional discovery.
+                  A fictional but emotionally rooted novel, Curled Crystal is told through a fragmented, non-linear, stream-of-consciousness style that mirrors the experience of living with trauma and psychological disorders. It explores coping, manipulation, emotional loops, and the yearning to heal—even when healing feels out of reach.
                 </p>
               </div>
             </motion.div>

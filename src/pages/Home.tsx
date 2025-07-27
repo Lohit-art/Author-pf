@@ -29,7 +29,16 @@ const Home: React.FC = () => {
                 Mindscapes with <span className="text-primary-600">S.Nimma</span>
               </h1>
               <p className="text-lg md:text-xl text-neutral-700 mb-8 leading-relaxed">
-                Welcome to the world of Curled Crystal. I'm Shanmukhee Nimma, the author of this poignant story inspired by true events, focusing on mental health, trauma, healing, and self-discovery. Through this narrative, I invite you to explore a journey that intertwines psychology and human connection, shedding light on the often misunderstood paths of mental health. Join me in awakening your quest for awareness and healing.
+                Welcome to the world of Curled Crystal.
+              </p>
+              <p className="text-lg md:text-xl text-neutral-700 mb-8 leading-relaxed">
+                I'm S. Nimma, author of this fictional yet emotionally rooted story inspired by real psychological patterns and silenced truths.
+              </p>
+              <p className="text-lg md:text-xl text-neutral-700 mb-8 leading-relaxed">
+                Told in a fragmented, stream-of-consciousness style, Curled Crystal explores mental health, trauma, and self-discovery, mirroring the inner chaos of disorders like BPD, bipolar disorder, and PTSD, alongside patriarchal and cultural silencing.
+              </p>
+              <p className="text-lg md:text-xl text-neutral-700 mb-8 leading-relaxed">
+                Set in the grey zones of morality and psychology, this is a journey that asks you not to judge, but to feel, question, and remember.
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#book-section" className="btn btn-primary">
