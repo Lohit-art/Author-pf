@@ -11,6 +11,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Book from './pages/Book';
 import Extract from './pages/Extract';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/book" element={<Book />} />
               <Route path="/extract" element={<Extract />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/colonial-echoes" element={<BlogPost />} />
             </Routes>
           </AnimatePresence>
         </main>

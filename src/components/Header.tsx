@@ -59,11 +59,17 @@ const Header: React.FC = () => {
             >
               Book
             </Link>
-            <Link 
-              to="/extract" 
+            <Link
+              to="/extract"
               className={`nav-link ${location.pathname === '/extract' ? 'active' : ''}`}
             >
               Extract
+            </Link>
+            <Link
+              to="/blog"
+              className={`nav-link ${location.pathname.startsWith('/blog') ? 'active' : ''}`}
+            >
+              Blog
             </Link>
           </div>
           
@@ -87,11 +93,29 @@ const Header: React.FC = () => {
               >
                 Home
               </Link>
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className={`text-lg ${location.pathname === '/about' ? 'text-primary-600 font-medium' : 'text-neutral-800'}`}
               >
                 About
+              </Link>
+              <Link
+                to="/book"
+                className={`text-lg ${location.pathname === '/book' ? 'text-primary-600 font-medium' : 'text-neutral-800'}`}
+              >
+                Book
+              </Link>
+              <Link
+                to="/extract"
+                className={`text-lg ${location.pathname === '/extract' ? 'text-primary-600 font-medium' : 'text-neutral-800'}`}
+              >
+                Extract
+              </Link>
+              <Link
+                to="/blog"
+                className={`text-lg ${location.pathname.startsWith('/blog') ? 'text-primary-600 font-medium' : 'text-neutral-800'}`}
+              >
+                Blog
               </Link>
             </div>
           </div>
