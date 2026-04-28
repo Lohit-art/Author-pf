@@ -74,12 +74,20 @@ const Blog: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-4xl mx-auto space-y-10">
           <ArticleCard
+            to="/blog/self-gaslighting-framework"
+            tag="Clinical Framework"
+            title="A New Clinical Framework for Self-Gaslighting (IVT, ELC, RPM)"
+            byline="S. Nimma — Individual Researcher, MSc Psychology (Student)"
+            excerpt="A comprehensive two-chapter study proposing three novel pre-therapy models—Internal Verification Therapy (IVT), Ego-Logic Collapse (ELC), and the Radiant Presence Model (RPM)—alongside a full literature review of self-gaslighting's causes, types, and therapeutic implications across personality disorders and trauma profiles."
+            delay={0}
+          />
+          <ArticleCard
             to="/blog/moral-anxiety"
             tag="Theoretical Model"
             title="From Moral Anxiety to Social Anxiety: The Evolution of Collective Gaslighting and Norm Adaptation Across Time"
             byline="S. Nimma — Author, Independent Researcher and Masters student in Psychology"
             excerpt="A revised theoretical model tracing how Freud's moral anxiety was never purely internal—from witch trials and patriarchal institutionalisation to modern beauty standards and influencer culture, the same cycle of collective gaslighting persists, simply shifting form with each era."
-            delay={0}
+            delay={0.15}
           />
           <ArticleCard
             to="/blog/colonial-echoes"

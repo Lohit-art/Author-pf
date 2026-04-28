@@ -14,6 +14,7 @@ import Extract from './pages/Extract';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import BlogPostMoralAnxiety from './pages/BlogPostMoralAnxiety';
+import BlogPostSelfGaslighting from './pages/BlogPostSelfGaslighting';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/colonial-echoes" element={<BlogPost />} />
               <Route path="/blog/moral-anxiety" element={<BlogPostMoralAnxiety />} />
+              <Route path="/blog/self-gaslighting-framework" element={<BlogPostSelfGaslighting />} />
             </Routes>
           </AnimatePresence>
         </main>
