@@ -1,7 +1,46 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { BookOpen, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+
+interface ArticleCardProps {
+  to: string;
+  tag: string;
+  title: string;
+  byline: string;
+  excerpt: string;
+  delay?: number;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ to, tag, title, byline, excerpt, delay = 0 }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7, delay }}
+  >
+    <Link
+      to={to}
+      className="group block bg-neutral-50 rounded-lg shadow-soft hover:shadow-medium transition-shadow duration-300 overflow-hidden"
+    >
+      <div className="p-8 md:p-10">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="text-xs font-semibold uppercase tracking-widest text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
+            {tag}
+          </span>
+        </div>
+        <h2 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4 group-hover:text-primary-700 transition-colors duration-200 leading-snug">
+          {title}
+        </h2>
+        <p className="text-sm text-neutral-500 mb-4">{byline}</p>
+        <p className="text-neutral-700 leading-relaxed mb-6">{excerpt}</p>
+        <span className="inline-flex items-center gap-2 text-primary-600 font-medium group-hover:gap-3 transition-all duration-200">
+          Read full article <ArrowRight size={16} />
+        </span>
+      </div>
+    </Link>
+  </motion.div>
+);
 
 const Blog: React.FC = () => {
   return (
@@ -33,38 +72,23 @@ const Blog: React.FC = () => {
 
       {/* Articles */}
       <section className="py-20 bg-white">
-        <div className="container-custom max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
-            <Link
-              to="/blog/colonial-echoes"
-              className="group block bg-neutral-50 rounded-lg shadow-soft hover:shadow-medium transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-8 md:p-10">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
-                    Research Essay
-                  </span>
-                </div>
-                <h2 className="text-2xl md:text-3xl font-serif font-semibold text-neutral-900 mb-4 group-hover:text-primary-700 transition-colors duration-200 leading-snug">
-                  Colonial Echoes: Intergenerational Psychological Impacts on Indian Society and Its Diaspora
-                </h2>
-                <p className="text-sm text-neutral-500 mb-4">
-                  S. Nimma — Author, Independent Researcher and Masters student in Psychology
-                </p>
-                <p className="text-neutral-700 leading-relaxed mb-6">
-                  This conceptual paper explores how two centuries of British colonial rule shaped enduring psychological patterns within Indian society and its diaspora. Drawing on theories of historical and intergenerational trauma, it examines how colonial subjugation cultivated silence, obedience, and moral restraint—behaviours that persist as cultural habits of endurance.
-                </p>
-                <span className="inline-flex items-center gap-2 text-primary-600 font-medium group-hover:gap-3 transition-all duration-200">
-                  Read full article <ArrowRight size={16} />
-                </span>
-              </div>
-            </Link>
-          </motion.div>
+        <div className="container-custom max-w-4xl mx-auto space-y-10">
+          <ArticleCard
+            to="/blog/moral-anxiety"
+            tag="Theoretical Model"
+            title="From Moral Anxiety to Social Anxiety: The Evolution of Collective Gaslighting and Norm Adaptation Across Time"
+            byline="S. Nimma — Author, Independent Researcher and Masters student in Psychology"
+            excerpt="A revised theoretical model tracing how Freud's moral anxiety was never purely internal—from witch trials and patriarchal institutionalisation to modern beauty standards and influencer culture, the same cycle of collective gaslighting persists, simply shifting form with each era."
+            delay={0}
+          />
+          <ArticleCard
+            to="/blog/colonial-echoes"
+            tag="Research Essay"
+            title="Colonial Echoes: Intergenerational Psychological Impacts on Indian Society and Its Diaspora"
+            byline="S. Nimma — Author, Independent Researcher and Masters student in Psychology"
+            excerpt="This conceptual paper explores how two centuries of British colonial rule shaped enduring psychological patterns within Indian society and its diaspora. Drawing on theories of historical and intergenerational trauma, it examines how colonial subjugation cultivated silence, obedience, and moral restraint—behaviours that persist as cultural habits of endurance."
+            delay={0.15}
+          />
         </div>
       </section>
     </motion.div>

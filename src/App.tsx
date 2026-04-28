@@ -13,6 +13,7 @@ import Book from './pages/Book';
 import Extract from './pages/Extract';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import BlogPostMoralAnxiety from './pages/BlogPostMoralAnxiety';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/extract" element={<Extract />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/colonial-echoes" element={<BlogPost />} />
+              <Route path="/blog/moral-anxiety" element={<BlogPostMoralAnxiety />} />
             </Routes>
           </AnimatePresence>
         </main>
