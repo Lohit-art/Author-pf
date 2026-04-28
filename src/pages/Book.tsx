@@ -44,12 +44,16 @@ const Book: React.FC = () => (
           href="https://amzn.in/d/0e38tJh4"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white rounded-xl shadow-medium flex items-center justify-center px-8 py-5 hover:shadow-lg transition-shadow duration-300"
+          className="bg-white rounded-xl flex items-center justify-center px-8 py-5 cursor-pointer"
+          style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          whileHover={{ scale: 1.06, boxShadow: '0 12px 32px 0 rgba(55,30,30,0.18)' }}
-          whileTap={{ scale: 0.97 }}
+          transition={{ delay: 1, duration: 0.6, type: 'spring', stiffness: 200 }}
+          whileHover={{
+            scale: 1.1,
+            boxShadow: '0 0 0 4px rgba(255, 153, 0, 0.25), 0 16px 40px rgba(255, 153, 0, 0.3)',
+          }}
+          whileTap={{ scale: 0.95 }}
           aria-label="Buy on Amazon Kindle"
         >
           <img
