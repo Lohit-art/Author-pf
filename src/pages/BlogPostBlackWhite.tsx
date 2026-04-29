@@ -47,7 +47,7 @@ const BlogPostBlackWhite: React.FC = () => {
             </Link>
             <div className="mb-4">
               <span className="text-xs font-semibold uppercase tracking-widest text-primary-600 bg-primary-100 px-3 py-1 rounded-full">
-                Conceptual Paper
+                Conceptual Framework
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 leading-tight mb-4">

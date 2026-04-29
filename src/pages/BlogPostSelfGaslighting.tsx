@@ -83,7 +83,7 @@ const BlogPostSelfGaslighting: React.FC = () => {
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 leading-tight mb-6">
-              Self-Gaslighting, Black &amp; White Thinking, Colonial Echoes
+              A New Clinical Framework for Self-Gaslighting (IVT, ELC, RPM)
             </h1>
             <p className="text-neutral-600 text-base leading-relaxed mb-6">
               <span className="font-semibold text-neutral-800">S. Nimma</span>

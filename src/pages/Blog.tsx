@@ -75,7 +75,7 @@ const Blog: React.FC = () => {
         <div className="container-custom max-w-4xl mx-auto space-y-10">
           <ArticleCard
             to="/blog/black-white-thinking"
-            tag="Conceptual Paper"
+            tag="Conceptual Framework"
             title="Black-and-White Thinking as Survival Strategy"
             byline="S. Nimma — Student in Psychology and Cognitive Trauma Studies"
             excerpt="What if black-and-white thinking is not a defence mechanism but a survival strategy? This paper reframes splitting as an adaptive cognitive response to early invalidation, relational unpredictability, and social gaslighting—challenging its classification as a pathological feature of BPD and PTSD."
@@ -84,14 +84,14 @@ const Blog: React.FC = () => {
           <ArticleCard
             to="/blog/self-gaslighting-framework"
             tag="Conceptual Framework"
-            title="Self-Gaslighting, Black &amp; White Thinking, Colonial Echoes"
+            title="A New Clinical Framework for Self-Gaslighting (IVT, ELC, RPM)"
             byline="S. Nimma — Individual Researcher, MSc Psychology (Student)"
             excerpt="A comprehensive two-chapter study proposing three novel pre-therapy models—Internal Verification Therapy (IVT), Ego-Logic Collapse (ELC), and the Radiant Presence Model (RPM)—alongside a full literature review of self-gaslighting's causes, types, and therapeutic implications across personality disorders and trauma profiles."
             delay={0}
           />
           <ArticleCard
             to="/blog/moral-anxiety"
-            tag="Theoretical Model"
+            tag="Conceptual Framework"
             title="From Moral Anxiety to Social Anxiety: The Evolution of Collective Gaslighting and Norm Adaptation Across Time"
             byline="S. Nimma — Author, Independent Researcher and Masters student in Psychology"
             excerpt="A revised theoretical model tracing how Freud's moral anxiety was never purely internal—from witch trials and patriarchal institutionalisation to modern beauty standards and influencer culture, the same cycle of collective gaslighting persists, simply shifting form with each era."
@@ -99,7 +99,7 @@ const Blog: React.FC = () => {
           />
           <ArticleCard
             to="/blog/colonial-echoes"
-            tag="Research Essay"
+            tag="Conceptual Framework"
             title="Colonial Echoes: Intergenerational Psychological Impacts on Indian Society and Its Diaspora"
             byline="S. Nimma — Author, Independent Researcher and Masters student in Psychology"
             excerpt="This conceptual paper explores how two centuries of British colonial rule shaped enduring psychological patterns within Indian society and its diaspora. Drawing on theories of historical and intergenerational trauma, it examines how colonial subjugation cultivated silence, obedience, and moral restraint—behaviours that persist as cultural habits of endurance."
