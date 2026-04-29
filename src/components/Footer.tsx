@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const [copied, setCopied] = useState(false);
-  const email = 'nimmafamily95@gmail.com';
+  const email = 'Shanmukhee02@gmail.com';
 
   const handleCopy = (e: React.MouseEvent) => {
     e.preventDefault();

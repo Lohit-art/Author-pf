@@ -74,9 +74,17 @@ const Blog: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-4xl mx-auto space-y-10">
           <ArticleCard
+            to="/blog/black-white-thinking"
+            tag="Conceptual Paper"
+            title="Black-and-White Thinking as Survival Strategy"
+            byline="S. Nimma — Student in Psychology and Cognitive Trauma Studies"
+            excerpt="What if black-and-white thinking is not a defence mechanism but a survival strategy? This paper reframes splitting as an adaptive cognitive response to early invalidation, relational unpredictability, and social gaslighting—challenging its classification as a pathological feature of BPD and PTSD."
+            delay={0}
+          />
+          <ArticleCard
             to="/blog/self-gaslighting-framework"
-            tag="Clinical Framework"
-            title="A New Clinical Framework for Self-Gaslighting (IVT, ELC, RPM)"
+            tag="Conceptual Framework"
+            title="Self-Gaslighting, Black &amp; White Thinking, Colonial Echoes"
             byline="S. Nimma — Individual Researcher, MSc Psychology (Student)"
             excerpt="A comprehensive two-chapter study proposing three novel pre-therapy models—Internal Verification Therapy (IVT), Ego-Logic Collapse (ELC), and the Radiant Presence Model (RPM)—alongside a full literature review of self-gaslighting's causes, types, and therapeutic implications across personality disorders and trauma profiles."
             delay={0}

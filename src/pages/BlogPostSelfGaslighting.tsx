@@ -79,17 +79,22 @@ const BlogPostSelfGaslighting: React.FC = () => {
             </Link>
             <div className="mb-4">
               <span className="text-xs font-semibold uppercase tracking-widest text-primary-600 bg-primary-100 px-3 py-1 rounded-full">
-                Clinical Framework
+                Conceptual Framework
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-neutral-900 leading-tight mb-6">
-              A New Clinical Framework for Self-Gaslighting (IVT, ELC, RPM)
+              Self-Gaslighting, Black &amp; White Thinking, Colonial Echoes
             </h1>
-            <p className="text-neutral-600 text-base leading-relaxed">
+            <p className="text-neutral-600 text-base leading-relaxed mb-6">
               <span className="font-semibold text-neutral-800">S. Nimma</span>
               <br />
               <span className="italic">Individual Researcher, MSc Psychology (Student)</span>
             </p>
+            <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+              <p className="text-sm text-amber-900 leading-relaxed italic">
+                The following models are theoretical, pre-therapy frameworks developed from existing psychological concepts. They are not clinically validated and should be understood as exploratory proposals rather than established therapeutic methods.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -698,6 +703,15 @@ const BlogPostSelfGaslighting: React.FC = () => {
             </ArticleSection>
 
           </motion.div>
+        </div>
+      </section>
+
+      {/* Footnote */}
+      <section className="py-6 bg-white">
+        <div className="container-custom max-w-3xl mx-auto">
+          <p className="text-xs text-neutral-500 italic border-t border-neutral-200 pt-4">
+            * This model is conceptual and requires empirical validation.
+          </p>
         </div>
       </section>
 
